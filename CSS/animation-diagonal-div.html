@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation-diagonal-div</title>
+
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: grey;
+        /* animation-name: my-new-anim; */
+        /* animation-duration: 5s; */
+        position: absolute;
+
+        animation: my-new-anim 5s;
+      }
+
+      @keyframes my-new-anim {
+        0% {
+          background-color: grey;
+          top: 50px;
+          left: 50px;
+        }
+
+        20% {
+          background-color: blue;
+          top: 100px;
+          left: 100px;
+        }
+
+        40% {
+          background-color: red;
+          top: 150px;
+          left: 150px;
+        }
+
+        60% {
+          background-color: yellowgreen;
+          top: 200px;
+          left: 200px;
+        }
+
+        80% {
+          background-color: hotpink;
+          top: 250px;
+          left: 250px;
+        }
+
+        100% {
+          background-color: green;
+          top: 300px;
+          left: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
