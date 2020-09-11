@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <link
+      rel="stylesheet"
+      href="../../BootStrap/bootstrap-files/bootstrap.min.css"
+    />
+    <style>
+      #i2 {
+        filter: opacity(0.5);
+      }
+      #i3 {
+        filter: blur(5px);
+      }
+      #i4 {
+        filter: brightness(5);
+      }
+      .blur {
+        filter: blur(4px);
+      }
+
+      .brightness {
+        filter: brightness(0.3);
+      }
+
+      .contrast {
+        filter: contrast(180%);
+      }
+
+      .grayscale {
+        filter: grayscale(100%);
+      }
+
+      .huerotate {
+        filter: hue-rotate(180deg);
+      }
+
+      .invert {
+        filter: invert(100%);
+      }
+
+      .opacity {
+        filter: opacity(50%);
+      }
+
+      .saturate {
+        filter: saturate(7);
+      }
+
+      .sepia {
+        filter: sepia(100%);
+      }
+
+      .shadow {
+        filter: drop-shadow(8px 8px 10px green);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>CSS filters</h1>
+      <img src="../../img/background2.jpg" width="500px" class="blur" />
+      <img src="../../img/background2.jpg" width="500px" class="brightness" />
+      <img src="../../img/background2.jpg" width="500px" class="contrast" />
+      <img src="../../img/background2.jpg" width="500px" class="grayscale" />
+      <img src="../../img/background2.jpg" width="500px" class="huerotate" />
+      <img src="../../img/background2.jpg" width="500px" class="invert" />
+      <img src="../../img/background2.jpg" width="500px" class="opacity" />
+      <img src="../../img/background2.jpg" width="500px" class="saturate" />
+      <img src="../../img/background2.jpg" width="500px" class="sepia" />
+      <img src="../../img/background2.jpg" width="500px" class="shadow" />
+      <br /><br />
+    </div>
+    <div>
+      <h1>BOOTSTRAP Image class</h1>
+
+      <img src="../../img/background1.jpg" width="500px" id="i1" />
+
+      <img
+        src="../../img/background2.jpg"
+        width="500px"
+        id="i3"
+        class="img-thmbnail"
+      />
+      <img
+        src="../../img/background1.jpg"
+        width="500px"
+        id="i2"
+        class="img-circle"
+      />
+      <img
+        src="../../img/background1.jpg"
+        width="500px"
+        id="i2"
+        class="img-rounded"
+      />
+    </div>
+    <div>
+      <h1>HTMLimage</h1>
+      <h2>Image Map</h2>
+      <img
+        src="../../img/laptop.jpg"
+        alt="Workplace"
+        usemap="#workmap"
+        width="400"
+        height="379"
+      />
+
+      <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" />
+        <area shape="rect" coords="290,172,333,250" alt="Phone" />
+        <area
+          shape="circle"
+          coords="337,300,44"
+          alt="Cup of coffee"
+          onclick="myFunction()"
+        />
+      </map>
+      <script>
+        function myFunction() {
+          alert("You clicked the coffee cup!");
+        }
+      </script>
+      <br /><br />
+      <h2>Background image</h2>
+      <div
+        class="container"
+        style="
+          background-image: url('../../img/background1.jpg');
+          background-repeat: no-repeat;
+          color: white;
+          height: 200px;
+        "
+      >
+        You can specify background images for any visible HTML element. In this
+        example, the background image is specified for a div element. By
+        default, the background-image will repeat itself in the direction(s)
+        where it is smaller than the element where it is specified. (Try
+        resizing the browser window to see how the<br />
+        background image behaves.
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>

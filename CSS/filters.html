@@ -14,12 +14,64 @@
       #i4 {
         filter: brightness(5);
       }
+      .blur {
+        filter: blur(4px);
+      }
+
+      .brightness {
+        filter: brightness(0.3);
+      }
+
+      .contrast {
+        filter: contrast(180%);
+      }
+
+      .grayscale {
+        filter: grayscale(100%);
+      }
+
+      .huerotate {
+        filter: hue-rotate(180deg);
+      }
+
+      .invert {
+        filter: invert(100%);
+      }
+
+      .opacity {
+        filter: opacity(50%);
+      }
+
+      .saturate {
+        filter: saturate(7);
+      }
+
+      .sepia {
+        filter: sepia(100%);
+      }
+
+      .shadow {
+        filter: drop-shadow(8px 8px 10px green);
+      }
     </style>
   </head>
   <body>
-    <img src="./../img/background1.jpg" width="500px" id="i1" />
-    <img src="./../img/background1.jpg" width="500px" id="i2" />
-    <img src="./../img/background2.jpg" width="500px" id="i3" />
-    <img src="./../img/background2.jpg" width="500px" id="i4" />
+    <div>
+      <img src="./../img/background2.jpg" width="300px" class="blur" />
+      <img src="./../img/background2.jpg" width="300px" class="brightness" />
+      <img src="./../img/background2.jpg" width="300px" class="contrast" />
+      <img src="./../img/background2.jpg" width="300px" class="grayscale" />
+      <img src="./../img/background2.jpg" width="300px" class="huerotate" />
+      <img src="./../img/background2.jpg" width="300px" class="invert" />
+      <img src="./../img/background2.jpg" width="300px" class="opacity" />
+      <img src="./../img/background2.jpg" width="300px" class="saturate" />
+      <img src="./../img/background2.jpg" width="300px" class="sepia" />
+      <img src="./../img/background2.jpg" width="300px" class="shadow" />
+      <br /><br />
+      <img src="./../img/background1.jpg" width="500px" id="i1" />
+      <img src="./../img/background1.jpg" width="500px" id="i2" />
+      <img src="./../img/background2.jpg" width="500px" id="i3" />
+      <img src="./../img/background2.jpg" width="500px" id="i4" />
+    </div>
   </body>
 </html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link rel="stylesheet" href="../bootstrap-files/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      #pro-bar {
+        width: 0%;
+        animation: pro 10s infinite;
+      }
+
+      @keyframes pro {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      .c1 {
+        height: 100px;
+        width: 100px;
+        background-color: grey;
+        /* animation-name: my-new-anim; */
+        /* animation-duration: 5s; */
+        position: absolute;
+
+        animation: my-new-anim 5s;
+      }
+
+      @keyframes my-new-anim {
+        0% {
+          background-color: grey;
+          top: 350px;
+          left: 350px;
+        }
+
+        20% {
+          background-color: blue;
+          top: 400px;
+          left: 400px;
+        }
+
+        40% {
+          background-color: red;
+          top: 450px;
+          left: 450px;
+        }
+
+        60% {
+          background-color: yellowgreen;
+          top: 500px;
+          left: 500px;
+        }
+
+        80% {
+          background-color: hotpink;
+          top: 550px;
+          left: 550px;
+        }
+
+        100% {
+          background-color: green;
+          top: 600px;
+          left: 600px;
+        }
+      }
+
+      .c2 {
+        height: 200px;
+        width: 300px;
+        text-align: center;
+        animation: myAnimation 4s;
+        border: 1px solid black;
+      }
+      @keyframes myAnimation {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+        }
+      }
+
+      .c3 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-color: red;
+        animation: myAnim 10s infinite;
+      }
+
+      @keyframes myAnim {
+        0% {
+          background-color: pink;
+          width: 100px;
+          height: 100px;
+          top: 0;
+          left: 0;
+        }
+        25% {
+          background-color: orange;
+          width: 150px;
+          height: 150px;
+          top: 0;
+          left: 50px;
+        }
+
+        50% {
+          background-color: yellow;
+          width: 100px;
+          height: 100px;
+          top: 80px;
+          left: 50px;
+        }
+
+        75% {
+          background-color: purple;
+          width: 150px;
+          height: 150px;
+          left: 0px;
+          top: 80px;
+        }
+        100% {
+          background-color: violet;
+          width: 100px;
+          height: 100px;
+          top: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="progress">
+        <div
+          id="pro-bar"
+          class="progress-bar progress-bar-striped active"
+          role="progressbar"
+          aria-valuenow="40"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          00%
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="c1">Welcome!!!</div>
+    </div>
+    <!-- <div class="container">
+      <div class="c2">Welcome!!!</div>
+    </div> -->
+
+    <div class="container">
+      <div class="c3">Welcome!!!</div>
+    </div>
+  </body>
+</html>
