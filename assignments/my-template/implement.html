@@ -7,20 +7,40 @@
     <link rel="stylesheet" href="../bootstrap-files/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style></style>
+    <style>
+      .cls {
+        border: 1px solid silver;
+        height: 200px;
+      }
+      #div2 {
+        background-image: url(../../img/background1.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+      }
+      #div4 {
+        background-image: url(../../img/background2.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+      }
+      #div6 {
+        background-image: url(../../img/background3.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
   <body>
+    <!-- Navigation bar -->
     <div class="container-fluid">
-      <!-- Navigation bar -->
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">WebSiteName</a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
+            <li class="active"><a href="#myCarousel">Home</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#user">User</a></li>
             <li><a href="#">Page 3</a></li>
           </ul>
         </div>
@@ -80,7 +100,7 @@
 
     <!-- Jumbotron -->
     <div class="container-fluid">
-      <div class="jumbotron">
+      <div class="jumbotron" id="media">
         <h1>Media</h1>
         <p>
           Multimedia comes in many different formats. It can be almost anything
@@ -92,12 +112,14 @@
         <div class="thumbnail">
           <a href="images.html" target="blank">
             <img
-              src="../assets/img/background1.jpg"
+              src="../assets/img/gallary.jpg"
               alt="Fjords"
-              style="width: 100%"
+              style="width: 100%; height: 300px"
+              height="300px"
             />
-            <div class="caption">
+            <div class="caption" style="text-align: center">
               <label>Images</label>
+              <p>Image gallary</p>
             </div>
           </a>
         </div>
@@ -106,13 +128,14 @@
         <div class="thumbnail">
           <a href="audio.html" target="blank">
             <img
-              src="../assets/img/background1.jpg"
+              src="../assets/img/audio.png"
               alt="Lights"
-              style="width: 100%"
+              style="width: 100%; height: 300px"
               class="img-rounded"
             />
-            <div class="caption">
+            <div class="caption" style="text-align: center">
               <label>Audio</label>
+              <p>Audio gallary</p>
             </div>
           </a>
         </div>
@@ -121,13 +144,14 @@
         <div class="thumbnail">
           <a href="video.html" target="blank">
             <img
-              src="../assets/img/background1.jpg"
+              src="../assets/img/video.png"
               alt="Nature"
-              style="width: 100%"
+              style="width: 100%; height: 300px"
               class="img-thumbnail"
             />
-            <div class="caption">
+            <div class="caption" style="text-align: center">
               <label>Video</label>
+              <p>Video gallary</p>
             </div>
           </a>
         </div>
@@ -136,23 +160,47 @@
         <div class="thumbnail">
           <a href="animation.html" target="blank">
             <img
-              src="../assets/img/background1.jpg"
+              src="../assets/img/gif.png"
               alt="Nature"
-              style="width: 100%"
+              style="width: 100%; height: 300px"
               class="img-circle"
             />
-            <div class="caption">
+            <div class="caption" style="text-align: center">
               <label>Animation</label>
+              <p>Animation gallary</p>
             </div>
           </a>
         </div>
       </div>
     </div>
-    <div id="div2">2</div>
-    <div id="div3">3</div>
-    <div id="div4">4</div>
-    <div id="div5">5</div>
-    <div id="div6">6</div>
-    <div id="div7">Footer</div>
+
+    <div class="cls" id="div2">2</div>
+
+    <!-- User -->
+    <div class="cls" id="user">
+      <br />
+      <div class="container" style="text-align: center">
+        <div class="col-md-6">
+          <div class="panel panel-primary" style="background-color: #d5d5d5">
+            <h1>Table</h1>
+            <a href="table.html" target="blank"
+              ><button type="button" class="btn btn-primary">Table</button> </a
+            ><br /><br /><br />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-primary" style="background-color: #d5d5d5">
+            <h1>Form</h1>
+            <a href="form.html" target="blank">
+              <button type="button" class="btn btn-primary">Form</button> </a
+            ><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cls" id="div4">4</div>
+    <div class="cls" id="div5">5</div>
+    <div class="cls" id="div6">6</div>
+    <div class="clsheader-footer" id="div7">Footer</div>
   </body>
 </html>

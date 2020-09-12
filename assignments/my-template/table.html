@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <script>
+      var pn = prompt("Enter number");
+      document.write("Table of " + pn);
+      //document.write("<table><tr>");
+
+      for (var i = 1; i <= 10; i++) {
+        var ans = pn * i;
+        document.write("<br>" + ans);
+        //document.write("<td>" + ans + "</td></tr>");
+      }
+
+      //document.write("</table>");
+      if (pn == 0) {
+        alert("Please enter valid value");
+      }
+    </script>
+  </body>
+</html>

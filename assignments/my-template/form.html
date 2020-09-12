@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="./../intro.html" >
+      <fieldset >
+        <legend style="text-align: center;">Register</legend>
+        <table>
+          <tr>
+            <td><label for="">User Name </label></td>
+            <td>
+              : <input type="text" placeholder="Enter Name" title="Your name" name="uName" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Password </label></td>
+            <td>: <input type="password" placeholder="Password" name="pass"/></td>
+          </tr>
+          <tr>
+            <td><label for="">Select Color </label></td>
+            <td>: <input type="color" title="Select Color" name="scolor"/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Date of Birth</label>
+            </td>
+            <td>: <input type="date" placeholder="Date of Birth" name="sdob"/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Time</label>
+            </td>
+            <td>: <input type="time" name="stime"/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Week</label>
+            </td>
+            <td>: <input type="week" name="sweek"/></td>
+        </tr>
+        
+          <tr>
+            <td>
+              <label for="">Datetime-local</label>
+            </td>
+            <td>: <input type="datetime-local" name="slocalTime"/></td>
+          </tr>
+          
+          <tr>
+            <td>
+              <label for="">Email</label>
+            </td>
+            <td>: <input type="email" name="semail"/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">File</label>
+            </td>
+            <td>: <input type="file" name="sfile"/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Hidden for encryption and decryption</label>
+            </td>
+            <td>: <input type="hidden" name="shidden"/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Image</label>
+            </td>
+            <td>: <input type="image" src="./../../img/background1.jpg" width="200px" name="simg"/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Month</label>
+            </td>
+            <td>: <input type="month" name="smonth"/></td>
+          </tr>
+           <tr>
+            <td>
+              <label for="" >Number</label>
+            </td>
+            <td>: <input type="number" min="1" max="10" step="2" name="snum" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Vehicle</label>
+              </td>
+            <td>
+              :<input type="checkbox" name="schk" value="Bike"/><label for="">Bike</label>
+            <input type="checkbox" name="schk1" value="Car" checked/><label for="">Car</label>
+            <input type="checkbox" name="schk2" value="Airoplane"/><label for="">Airoplane</label>
+            </td>
+            
+            
+            
+          </tr>
+          <tr>
+            <td>
+              <label for="">Gender</label>
+            </td>
+            <td >:<input type="radio" name="sgender" value="Male"/><label for="">Male</label>
+            <input type="radio" name="sgender" value="Female"/><label for="">Female</label></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">City</label>
+            </td>
+            <td >
+              <select name="scity" id=""><option value="Pune" >Pune</option><option value="Mumbai" >Mumbai</option>
+            <option value="Delhi" >Delhi</option></select</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Range</label>
+            </td>
+            <td>: <input type="range" min="1" max="10" value="4" name="srange"/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Search</label>
+            </td>
+            <td>: <input type="search" name="ssearch" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Tel</label>
+            </td>
+            <td>: <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="stel"/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">URL</label>
+            </td>
+            <td>: <input type="url" name="surl"/></td>
+          </tr>
+          
+         <!-- <tr>
+            <td><input type="button" value="Button"/></td>
+          </tr> -->
+          <tr>
+            <td><input type="reset" /></td>
+          
+            <td><input type="submit" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <!-- Tips and Notes
+Tip: Always use the <label> tag to define labels for <input type="text">, <input type="checkbox">, <input type="radio">, <input type="file">, and <input type="password">. -->
+
+    <!-- Ans
+    
+    http://127.0.0.1:5500/myWebWork/HTML/intro.html?
+    uName=abc
+    &pass=123
+    &scolor=%23db0f0f
+    &sdob=2020-09-07
+    &stime=16%3A40
+    &sweek=2020-W37
+    &slocalTime=2020-09-17T16%3A38
+    &semail=asd%40c
+    &sfile=ANGULAR+SYLLABUS.docx
+    &shidden=
+    &smonth=2020-02
+    &snum=5
+    //&schk=on&schk=on
+    &schk=Bike&schk1=Car
+    //&sgender=on
+    &sgender=Female
+    &scity=Mumbai
+    &srange=6
+    &ssearch=serach+bar
+    &stel=789-78-789
+    &surl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dinput%2Btype%2Battribute%2Bin%2Bform%2Btag%26rlz%3D1C1CHBF_enIN914IN914%26oq%3Dinput%2B%26aqs%3Dchrome.1.69i57j35i39l2j0l2j69i61l3.3678j0j7%26sourceid%3Dchrome%26ie%3DUTF-8
+-->
+  </body>
+</html>
