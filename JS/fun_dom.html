@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="../img/laptop.jpg" alt="" id="big-img" width="600px" /><br />
+    <img
+      src="../img/background1.jpg"
+      alt=""
+      id="big-img"
+      width="200px"
+      onclick="changeImg(this.src)"
+    />
+    <img
+      src="../img/background2.jpg"
+      alt=""
+      id="big-img"
+      width="200px"
+      onclick="changeImg(this.src)"
+    />
+    <img
+      src="../img/background3.jpg"
+      alt=""
+      id="big-img"
+      width="200px"
+      onclick="changeImg(this.src)"
+    />
+
+    <script>
+      function changeImg(thisSrc) {
+        document.getElementById("big-img").src = thisSrc;
+      }
+    </script>
+  </body>
+</html>

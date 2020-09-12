@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1>getElementById</h1>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit
+      cumque, odit dolorem similique praesentium doloremque reprehenderit rerum?
+      Eius, id? Beatae amet dolore quod ab, a illum sit aliquam enim.
+    </p>
+    <script>
+      var ele = document.getElementById("para");
+      console.log("ele ->" + ele);
+      console.log(ele);
+      ele.innerHTML = "In para";
+    </script>
+
+    <hr />
+    <hr />
+
+    <h1>getElementsByClassName</h1>
+    <p class="cls">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h1 class="cls">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </h1>
+    <div class="cls">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <mark class="cls"
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit.</mark
+    >
+    <script>
+      var clsEles = document.getElementsByClassName("cls");
+      console.log("Class ele ", clsEles);
+    </script>
+  </body>
+</html>
