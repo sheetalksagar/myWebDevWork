@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event listen</title>
+  </head>
+  <body>
+    <button onclick="sayHello()">Click</button>
+    <p id="demo"></p>
+    <script>
+      function sayHello() {
+        document.getElementById("demo").innerHTML = "Hello";
+      }
+    </script>
+
+    <button id="eve">Click</button>
+    <script>
+      document.getElementById("eve").addEventListener("click", sayEve());
+      function sayEve() {
+        document.write("In eve");
+      }
+    </script>
+  </body>
+</html>

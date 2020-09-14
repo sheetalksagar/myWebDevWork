@@ -9,14 +9,16 @@
     <script>
       var pn = prompt("Enter number");
       document.write("Table of " + pn);
-      //document.write("<table><tr>");
 
       for (var i = 1; i <= 10; i++) {
         var ans = pn * i;
-        document.write("<br>" + ans);
+        document.write(
+          "<table style='color:blue; border:1px solid blueviolet'><tr><td><br>" +
+            ans +
+            "</td></tr></table>"
+        );
       }
 
-      //document.write("</table>");
       if (pn == 0) {
         alert("Please enter valid value");
       }
