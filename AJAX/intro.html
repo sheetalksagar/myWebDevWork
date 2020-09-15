@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>The XMLHttpRequest Object</h2>
+    <button type="button" onclick="chData()">Change Content</button>
+
+    <div id="demo"></div>
+
+    <script>
+      function chData() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+          }
+        };
+
+        xhttp.open("GET", "demo.txt", true);
+        xhttp.send();
+        console.log(xhttp);
+      }
+    </script>
+  </body>
+</html>
+<!-- The onreadystatechange Property<br>
+The readyState property holds the status of the XMLHttpRequest.<br>
+
+The onreadystatechange property defines a function to be executed when the readyState changes.<br>
+
+The status property and the statusText property holds the status of the XMLHttpRequest object. <br>
+<hr> <hr>
+onreadystatechange	Defines a function to be called when the readyState property changes<br><br>
+readyState	Holds the status of the XMLHttpRequest.<br>
+0: request not initialized<br>
+1: server connection established<br>
+2: request received<br>
+3: processing request<br>
+4: request finished and response is ready<br><br>
+status	200: "OK"<br>
+403: "Forbidden"<br>
+404: "Page not found"<br>
+For a complete list go to the Http Messages Reference<br>
+statusText	Returns the status-text (e.g. "OK" or "Not Found")<br>  -->
+
+<!-- XMLHttpRequest {readyState: 1, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, onreadystatechange: ƒ, …}onabort: nullonerror: nullonload: nullonloadend: nullonloadstart: nullonprogress: nullonreadystatechange: ƒ ()arguments: nullcaller: nulllength: 0name: ""prototype: {constructor: ƒ}constructor: ƒ ()__proto__: Object__proto__: ƒ ()apply: ƒ apply()arguments: (...)bind: ƒ bind()call: ƒ call()caller: (...)constructor: ƒ Function()length: 0name: ""toString: ƒ toString()Symbol(Symbol.hasInstance): ƒ [Symbol.hasInstance]()get arguments: ƒ ()set arguments: ƒ ()get caller: ƒ ()set caller: ƒ ()__proto__: Object[[FunctionLocation]]: <unknown>[[Scopes]]: Scopes[0][[FunctionLocation]]: intro.html:12[[Scopes]]: Scopes[1]ontimeout: nullreadyState: 4response: "<h1>Welcome</h1>
+↵<p>You are in "demo.txt"</p>"responseText: "<h1>Welcome</h1>
+↵<p>You are in "demo.txt"</p>"responseType: ""responseURL: "http://127.0.0.1:5500/myWebWork/AJAX/demo.txt"responseXML: nullstatus: 200statusText: "OK"timeout: 0trustTokenOperationError: nullupload: XMLHttpRequestUploadonabort: nullonerror: nullonload: nullonloadend: nullonloadstart: nullonprogress: nullontimeout: null__proto__: XMLHttpRequestUploadwithCredentials: false__proto__: XMLHttpRequest -->

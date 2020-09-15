@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <button>Send an HTTP GET request to a page and get the result back</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $.get("demo.txt", function (data, status, code) {
+            alert("Data: " + data + "\nStatus: " + status + "\ncode: " + code);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
