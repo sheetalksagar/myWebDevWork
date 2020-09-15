@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>js</h1>
+    <p onclick="this.style.display='none'">
+      click to disappear using js <br /><br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+      voluptas. Saepe ratione consequuntur expedita mollitia, inventore deserunt
+      corrupti doloribus dolorum laudantium incidunt cupiditate ullam alias?
+      Enim placeat eos quod doloremque.
+    </p>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+      voluptas. Saepe ratione consequuntur expedita mollitia, inventore deserunt
+      corrupti doloribus dolorum laudantium incidunt cupiditate ullam alias?
+      Enim placeat eos quod doloremque.
+    </div>
+
+    <hr />
+    <hr />
+    <h1>jq</h1>
+    <p>
+      click to disappear using jq Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Molestiae, voluptas. Saepe ratione consequuntur expedita
+      mollitia, inventore deserunt corrupti doloribus dolorum laudantium
+      incidunt cupiditate ullam alias? Enim placeat eos quod doloremque.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+      voluptas. Saepe ratione consequuntur expedita mollitia, inventore deserunt
+      corrupti doloribus dolorum laudantium incidunt cupiditate ullam alias?
+      Enim placeat eos quod doloremque.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+      voluptas. Saepe ratione consequuntur expedita mollitia, inventore deserunt
+      corrupti doloribus dolorum laudantium incidunt cupiditate ullam alias?
+      Enim placeat eos quod doloremque.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+      voluptas. Saepe ratione consequuntur expedita mollitia, inventore deserunt
+      corrupti doloribus dolorum laudantium incidunt cupiditate ullam alias?
+      Enim placeat eos quod doloremque.
+    </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //wait to load document
+        $("p").click(function () {
+          $(this).hide();
+        });
+
+        $("div").click(function () {
+          $(this).hide(function () {
+            alert("Hiding div");
+          });
+        });
+      });
+      //     $(document).ready(function (){
+      //     $("div").click(function () {
+      //       $(this).hide(function(){
+      //               alert("Hiding div");
+      //             });
+      //   });
+    </script>
+  </body>
+</html>
+<!-- $.
+    $('p').hide();
+    $('html ele').hide();   // 'p',   'div', 'table'
+    $('css selectors').hide();  // .class  ,  #id
+    $( object ).hide();         // document
+    $(this).hide();             // current ele
+ -->

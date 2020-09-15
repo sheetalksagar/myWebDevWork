@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("p").hide();
+        });
+        $("#show").click(function () {
+          $("p").show();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>If you click on the "Hide" button, I will disappear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <hr />
+    <hr />
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          $("#p1").hide(1000);
+        });
+      });
+    </script>
+
+    <button id="b1">Hide with timer</button>
+
+    <p id="p1">This is a paragraph with little content.</p>
+    <p id="p1">This is another small paragraph.</p>
+
+    <hr />
+    <hr />
+
+    <h1>Toggle</h1>
+    <script>
+      $(document).ready(function () {
+        $("#bt1").click(function () {
+          $("#pt1").toggle();
+        });
+      });
+    </script>
+    <button id="bt1">Toggle between hiding and showing the paragraphs</button>
+
+    <p id="pt1">This is a paragraph with little content.</p>
+    <p id="pt1">This is another small paragraph.</p>
+  </body>
+</html>

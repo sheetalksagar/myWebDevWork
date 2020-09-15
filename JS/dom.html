@@ -18,6 +18,22 @@
       console.log(ele);
       ele.innerHTML = "In para";
     </script>
+    <hr />
+    <hr />
+    <p>1 Lorem ipsum dolor sit amet.</p>
+    <p>2 Lorem ipsum dolor sit amet.</p>
+    <p>3 Lorem ipsum dolor sit amet.</p>
+    <p>4 Lorem ipsum dolor sit amet.</p>
+    <p>5 Lorem ipsum dolor sit amet.</p>
+
+    <script>
+      var eles = document.getElementsByTagName("p");
+      console.log("eles", eles);
+      console.log(eles);
+      console.log(eles[1]);
+
+      eles[1].innerHTML = "h3llo";
+    </script>
 
     <hr />
     <hr />
@@ -39,3 +55,18 @@
     </script>
   </body>
 </html>
+<!-- 
+    DOM
+    <img src="../img/background1.jpg" alt="text" width="200" />
+    img = {
+        src:"../img/background1.jpg",
+        alt:"text",
+        width:"200"
+    }
+    var ele = {
+        src:"../img/background1.jpg",
+        alt:"text",
+        width:"200"
+    }
+    ele.src   // o/p:  "../img/background1.jpg"
+ -->
